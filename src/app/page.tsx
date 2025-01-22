@@ -7,19 +7,29 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.container}>
           <h1 className={styles.rgbText}>🫶Fernanda🫶</h1>
-          <Image
-            className={styles.profileImage}
-            src="/fernanda.jpg"
-            alt="Fernanda"
-            width={400}
-            height={400}
-            priority
-          />
+          <div className={styles.flipContainer}>
+            <div className={styles.flipInner}>
+              <div className={styles.flipFront}>
+                <Image
+                  className={styles.profileImage}
+                  src="/fernanda.jpg"
+                  alt="Fernanda"
+                  width={200}
+                  height={200}
+                  priority
+                />
+              </div>
+              <div className={styles.flipBack}>
+                <p className={styles.backText}>Chatonilda</p>
+              </div>
+            </div>
+          </div>
           <div className={styles.rotatingText}>
-            <span>C</span>
-            <span>H</span>
+            <span>S</span>
             <span>A</span>
-            <span>T</span>
+            <span>F</span>
+            <span>A</span>
+            <span>D</span>
             <span>A</span>
           </div>
         </div>
